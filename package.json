@@ -1,0 +1,36 @@
+{
+	"name": "@fungieble/carrotsoup",
+	"version": "0.0.1",
+	"description": "React Hooks for Aleph Zero",
+	"homepage": "https://fungieble.art",
+	"author": "dev@fungible.art",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/fungieble/carrotsoup/issues"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:fungieble/carrotsoup.git"
+	},
+	"keywords": [
+		"react",
+		"hooks",
+		"wallet",
+		"aleph zero"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"dependencies": {
+		"husky": "^8.0.3"
+	}
+}
