@@ -1,21 +1,22 @@
 {
-	"name": "@fungieble/carrotsoup",
-	"version": "0.0.1",
+	"name": "@fungieble/bitfish",
+	"version": "0.0.2",
 	"description": "React Hooks for Aleph Zero",
 	"homepage": "https://fungieble.art",
 	"author": "dev@fungible.art",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/fungieble/carrotsoup/issues"
+		"url": "https://github.com/fungieble/bitfish/issues"
 	},
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"type": "module",
 	"files": [
 		"dist"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:fungieble/carrotsoup.git"
+		"url": "git@github.com:fungieble/bitfish.git"
 	},
 	"keywords": [
 		"react",
@@ -24,6 +25,8 @@
 		"aleph zero"
 	],
 	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky install"
 	},
@@ -31,6 +34,13 @@
 		"**/*": "prettier --write --ignore-unknown"
 	},
 	"dependencies": {
-		"husky": "^8.0.3"
+		"@tanstack/react-query": "^4.28.0",
+		"@types/react": "^18.0.33",
+		"husky": "^8.0.3",
+		"react": "^18.2.0",
+		"typescript": "^5.0.3"
+	},
+	"devDependencies": {
+		"tsup": "^6.7.0"
 	}
 }
