@@ -1,6 +1,6 @@
 {
 	"name": "@fungieble/bitfish",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "React Hooks for Aleph Zero",
 	"homepage": "https://fungieble.art",
 	"author": "dev@fungible.art",
@@ -10,6 +10,7 @@
 	},
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"type": "module",
 	"files": [
 		"dist"
 	],
@@ -24,6 +25,7 @@
 		"aleph zero"
 	],
 	"scripts": {
+		"build": "tsup",
 		"dev": "tsup --watch",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky install"
@@ -32,6 +34,7 @@
 		"**/*": "prettier --write --ignore-unknown"
 	},
 	"dependencies": {
+		"@tanstack/react-query": "^4.28.0",
 		"@types/react": "^18.0.33",
 		"husky": "^8.0.3",
 		"react": "^18.2.0",
